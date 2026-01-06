@@ -1,0 +1,66 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Backup files created by the skill
+*.bak
+*.bak.*
+
+# Queue files (contain session data)
+reflect-queue.md
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Log files
+*.log
+debug/
+
+# Environment and secrets
+.env
+.env.*
+*.env
+.envrc
+credentials.json
+secrets.json
+*.pem
+*.key
+
+# User-specific files
+*.local
+*.local.md
+
+# Session data
+session-*.json
+transcripts/
+history.jsonl
+
+# Node modules (if any scripts use them)
+node_modules/
+
+# Python (if any scripts use it)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Test output
+coverage/
+.nyc_output/

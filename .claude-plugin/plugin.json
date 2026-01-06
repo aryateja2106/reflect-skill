@@ -1,0 +1,22 @@
+{
+  "name": "reflect-skill",
+  "version": "1.0.0",
+  "description": "Learn from session corrections and update AI configuration files. Helps AI coding agents remember your preferences and avoid repeated mistakes.",
+  "author": {
+    "name": "Arya Teja Rudraraju",
+    "url": "https://github.com/aryateja2106"
+  },
+  "repository": "https://github.com/aryateja2106/reflect-skill",
+  "license": "MIT",
+  "keywords": [
+    "reflection",
+    "learning",
+    "memory",
+    "corrections",
+    "preferences",
+    "configuration",
+    "claude-code",
+    "ai-agent",
+    "productivity"
+  ]
+}

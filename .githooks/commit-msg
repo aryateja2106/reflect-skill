@@ -1,0 +1,20 @@
+#!/bin/bash
+# Strip AI co-author trailers from commits
+# This ensures commits appear with only the human author
+# Works with Claude Code, Cursor, and other AI coding assistants
+
+COMMIT_MSG_FILE="$1"
+
+# Remove Co-Authored-By lines for AI assistants
+sed -i '' '/^Co-Authored-By: Claude/d' "$COMMIT_MSG_FILE" 2>/dev/null || \
+sed -i '/^Co-Authored-By: Claude/d' "$COMMIT_MSG_FILE"
+
+# Remove Generated with Claude Code lines
+sed -i '' '/^.*Generated with \[Claude Code\]/d' "$COMMIT_MSG_FILE" 2>/dev/null || \
+sed -i '/^.*Generated with \[Claude Code\]/d' "$COMMIT_MSG_FILE"
+
+# Remove Cursor AI attribution if present
+sed -i '' '/^Co-Authored-By: Cursor/d' "$COMMIT_MSG_FILE" 2>/dev/null || \
+sed -i '/^Co-Authored-By: Cursor/d' "$COMMIT_MSG_FILE"
+
+exit 0
